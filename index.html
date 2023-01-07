@@ -17,12 +17,18 @@
   </header> 
   <main class="area_de_trabajo">
     <div class="area_de_texto">
-      <input placeholder="Ingrese el texto aquí" type="text" class="texto_ingresado">
+      <input placeholder="Ingrese el texto aquí" type="text" class="texto_ingresado" id="texto_ingresado">
     </div>
     <div  class="botones">
-      <button class="buttonA" onclick="encryptText()">Encriptar</button>
+      <button class="buttonA" onclick="encryptar()">Encriptar</button>
       <button class="buttonB" onclick="uncryptText()">Desencriptar</button>
     </div>
+    
+    <div class="texto_encriptado">
+      <div id="texto_salida" class="div_texto_encriptado"> HOLA
+      </div>
+    </div>
+
   </main>
   <footer class="pie_de_pagina">
     Creado en 2023 por: Maria Andrea Cardenas Henao Oracle ONE ©

@@ -1,95 +1,31 @@
-/*var palabra= "Andrea";
-var validacionMayuscula=/[A-Z]/;
-var resultado= validacionMayuscula.test(palabra);
-alert("validacion Mayuscula   " + resultado);
-
-var palabra1= "andreá";
-var validacionTildes=/[á-ú]/;
-var resultado1= validacionTildes.test(palabra1);
-alert("validacion Tildes " + resultado1);
-
-var palabra2= "andrea";
-var validacionNumero=/[0-9]/;
-var resultado2= validacionNumero.test(palabra2);
-alert("validacion Numero " + resultado2);*/
-
-
-
-
-
-const encrypt = text => text.replace(/e/g, 'enter')
+var encrypt = text => text.replace(/e/g, 'enter')
   .replace(/i/g, 'imes')
   .replace(/a/g, 'ai')
   .replace(/o/g, 'ober')
-  .replace(/u/g, 'ufat')
+  .replace(/u/g, 'ufat');
 
-const uncrypt = text => text.replace(/enter/g, 'e')
+var uncrypt = text => text.replace(/enter/g, 'e')
   .replace(/imes/g, 'i')
   .replace(/ai/g, 'a')
   .replace(/ober/g, 'o')
   .replace(/ufat/g, 'u');
 
-const stringValidate = text => {
-  let regStringValidate = /[A-Z]|[á-ú]|[Á-Ú]|[à-ù]/;
+  var functionValidacionTextoIngresado = text => {
+  var regStringValidate = /[A-Z]|[á-ú]|[Á-Ú]|[à-ù]/;
   return regStringValidate.test(text);
 }
 
-function encryptText() {
-  let texto = document.getElementById("texto_ingresado").value;
-  let value = stringValidate(texto);
-  defaultCopy();
-  if (!value && texto != '') {
-    let output = encrypt(texto);
-    outputConf(output);
-    document.getElementById("info").style.visibility = "hidden";
-  } else if (!value && texto == '') {
-    defaultOutput();
-  } else {
-    document.getElementById("info").style.visibility = "visible";
-  }
-}
+function encryptar() {
+  var texto = document.getElementById("texto_ingresado").value;
+  var validarMayusculasTildes = functionValidacionTextoIngresado(texto);
+  alert("resultado validación " + validarMayusculasTildes);
 
-function uncryptText() {
-  let texto = document.getElementById("texto_ingresado").value;
-  let value = stringValidate(texto);
-  defaultCopy();
-  if (!value && texto != '') { // condiciones para encriptar texto
-    let output = uncrypt(texto);
-    outputConf(output);
-    document.getElementById("info").style.visibility = "hidden";
-    tooltip.innerHTML = "Copiar al portapapeles";
-  } else if (!value && texto == '') {
-    defaultOutput();
-  } else {
-    document.getElementById("info").style.visibility = "visible";
-  }
-}
-
-function outputConf(text) {
-  document.getElementById("initial-output").style.display = "none"
-  document.getElementById("text").innerHTML = text;
-  document.getElementById("texto_de_salida").style.display = "flex"
-}
-
-function defaultOutput() {
-  document.getElementById("info").style.visibility = "hidden";
-  document.getElementById("texto_de_salida").style.display = "none";
-  document.getElementById("initial-output").style.display = "flex";
-}
-
-
-function copyText() {
-  try {
-    let entrada = document.getElementById("text").innerHTML;
-    navigator.clipboard.writeText(entrada);
-    let tooltip = document.getElementById("texto_encriptado");
-    tooltip.innerHTML = "Se ha copiado: " + entrada;
-  } catch (err) {
-    console.log("Error al copiar");
-  }
 }
 
 function defaultCopy(){
   let tooltip = document.getElementById("texto_encriptado");
   tooltip.innerHTML = "Copiar al portapapeles";
 }
+
+
+
