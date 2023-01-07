@@ -1,42 +1,28 @@
-:root {
-  --darkBlue100: #609ED4;
-  --darkBlue200: #356EA9;
-  --darkBlue300: #0A3871;
-  --darkBlue400: #072B61;
-  --darkBlue500: #052051;
-
-  --lightBlue100: #F3F5FC;
-  --lightBlue200: #EFF1FA;
-  --lightBlue300: #E9ECF8;
-  --lightBlue400: #AAB2D5;
-  --lightBlue500: #757FB2;
-
-  --gray100: #CED4DA;
-  --gray200: #ADB5BD;
-  --gray300: #868E96;
-  --gray400: #495057;
-  --gray500: #343A40;
-
-}
-
 body {
-  background-color: var(--lightBlue300);
+  background-color: lightcoral;
   font-family: 'Inter', sans-serif;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
 }
 
-header {
-  background-color: #FFFFFF;
+.header {
+  background-color: #097189;
   height: 220px;
   width: 100%;
 }
 
 header img {
   width: 50px;
-  height:90px;
-  padding: 15px;
+  height: 85px;
+  border-radius: 32px;
+
+}
+
+.logo{
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 50px;
 }
 
 .imagen_banner {
@@ -50,14 +36,16 @@ height: 100%;
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 5%;
-  border: 1px solid var(--darkBlue500);
+  border: 1px solid rgb(43, 124, 93);
+  border-radius: 32px;
 }
 
 .texto_ingresado {
   background-color: lightblue;
   padding: 10px;
   margin: 10% 10% 10% 10%;width: 100%;
-  border: 1px dotted var(--darkBlue500);
+  border: 1px dotted rgb(23, 83, 61);
+  border-radius: 15px;
 }
 
 .area_de_texto {

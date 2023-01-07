@@ -1,3 +1,22 @@
+/*var palabra= "Andrea";
+var validacionMayuscula=/[A-Z]/;
+var resultado= validacionMayuscula.test(palabra);
+alert("validacion Mayuscula   " + resultado);
+
+var palabra1= "andreá";
+var validacionTildes=/[á-ú]/;
+var resultado1= validacionTildes.test(palabra1);
+alert("validacion Tildes " + resultado1);
+
+var palabra2= "andrea";
+var validacionNumero=/[0-9]/;
+var resultado2= validacionNumero.test(palabra2);
+alert("validacion Numero " + resultado2);*/
+
+
+
+
+
 const encrypt = text => text.replace(/e/g, 'enter')
   .replace(/i/g, 'imes')
   .replace(/a/g, 'ai')
