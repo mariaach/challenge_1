@@ -1,31 +1,38 @@
-var encrypt = text => text.replace(/e/g, 'enter')
+var encrypt = vartext => vartext.replace(/e/g, 'enter')
   .replace(/i/g, 'imes')
   .replace(/a/g, 'ai')
   .replace(/o/g, 'ober')
   .replace(/u/g, 'ufat');
 
-var uncrypt = text => text.replace(/enter/g, 'e')
+var uncrypt = vartext => vartext.replace(/enter/g, 'e')
   .replace(/imes/g, 'i')
   .replace(/ai/g, 'a')
   .replace(/ober/g, 'o')
   .replace(/ufat/g, 'u');
 
-  var functionValidacionTextoIngresado = text => {
+var functionValidacionTextoIngresado = text => {
   var regStringValidate = /[A-Z]|[á-ú]|[Á-Ú]|[à-ù]/;
   return regStringValidate.test(text);
 }
 
-function encryptar() {
+function funEncryptarTexto() {
   var texto = document.getElementById("texto_ingresado").value;
   var validarMayusculasTildes = functionValidacionTextoIngresado(texto);
-  alert("resultado validación " + validarMayusculasTildes);
+  if (!validarMayusculasTildes) {
+    encrypt(texto)
+    document.getElementById("texto_salida").innerHTML = encrypt(texto);
+    document.getElementById("mensaje_error").innerHTML="";
+  } else { 
+    document.getElementById("mensaje_error").innerHTML="No cumple condicion";
+    /*alert("No cumple condicion")*/
+  }
 
+
+  /*alert("resultado validación " +  encrypt(texto));*/
 }
 
-function defaultCopy(){
-  let tooltip = document.getElementById("texto_encriptado");
-  tooltip.innerHTML = "Copiar al portapapeles";
-}
+
+
 
 
 

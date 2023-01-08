@@ -20,14 +20,16 @@
       <input placeholder="Ingrese el texto aquí" type="text" class="texto_ingresado" id="texto_ingresado">
     </div>
     <div  class="botones">
-      <button class="buttonA" onclick="encryptar()">Encriptar</button>
+      <button class="buttonA" onclick="funEncryptarTexto()">Encriptar</button>
       <button class="buttonB" onclick="uncryptText()">Desencriptar</button>
     </div>
     
     <div class="texto_encriptado">
-      <div id="texto_salida" class="div_texto_encriptado"> HOLA
+      <div id="texto_salida" class="div_texto_encriptado">
       </div>
     </div>
+
+    <div class="mensaje_invalido" id="mensaje_error"></div>
 
   </main>
   <footer class="pie_de_pagina">
