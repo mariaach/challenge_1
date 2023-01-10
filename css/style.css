@@ -51,21 +51,25 @@ height: 100%;
 }
 
 .area_de_texto {
+  margin-left: 15%;
   width: 600px;
   height: 150px;
+  
 }
 
 .pie_de_pagina {
   border-color: #052051;
   width: 80%;
   height: 20px;
-  margin-top: 10%;
-  text-align: center;
+  margin-top: 19%;
+  text-align: bold;
+  margin-left: 1%;
   align-self: flex-end;
+
 }
 
 .texto_encriptado{
-  background-color: aquamarine;
+  background-color: rgb(73, 103, 188);
   border: 1px dotted rgb(23, 83, 61);
   border-radius: 15px;
   width: 80%;
@@ -223,44 +227,6 @@ button {
   gap: 2rem;
   text-align: left;
   font-size: 1.5rem;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: var(--lightBlue500);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color:var(--lightBlue500) transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
 }
 
 

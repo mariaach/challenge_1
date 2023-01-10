@@ -20,16 +20,27 @@ function funEncryptarTexto() {
   var validarMayusculasTildes = functionValidacionTextoIngresado(texto);
   if (!validarMayusculasTildes) {
     encrypt(texto)
-    document.getElementById("texto_salida").innerHTML = encrypt(texto);
+    document.getElementById("texto_salida").innerHTML = "El texto encriptado es: " + encrypt(texto);
     document.getElementById("mensaje_error").innerHTML="";
   } else { 
     document.getElementById("mensaje_error").innerHTML="No cumple condicion";
-    /*alert("No cumple condicion")*/
+  }
+  
+}
+
+  function funDesencryptarTexto() {
+    var texto = document.getElementById("texto_ingresado").value;
+    var validarMayusculasTildes = functionValidacionTextoIngresado(texto);
+    if (!validarMayusculasTildes) {
+      uncrypt(texto)
+      document.getElementById("texto_salida").innerHTML = "El texto desencriptado es: " + uncrypt(texto);
+      document.getElementById("mensaje_error").innerHTML="";
+    } else { 
+      document.getElementById("mensaje_error").innerHTML="No cumple condicion";
+    }
   }
 
 
-  /*alert("resultado validación " +  encrypt(texto));*/
-}
 
 
 
