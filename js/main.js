@@ -21,9 +21,9 @@ function funEncryptarTexto() {
   if (!validarMayusculasTildes) {
     encrypt(texto)
     document.getElementById("texto_salida").innerHTML = "El texto encriptado es: " + encrypt(texto);
-    document.getElementById("mensaje_error").innerHTML="";
   } else { 
-    document.getElementById("mensaje_error").innerHTML="No cumple condicion";
+    document.getElementById("texto_salida").innerHTML=" *No cumple condicion";
+    document.getElementById("texto_ingresado").value="";
   }
   
 }
@@ -34,13 +34,12 @@ function funEncryptarTexto() {
     if (!validarMayusculasTildes) {
       uncrypt(texto)
       document.getElementById("texto_salida").innerHTML = "El texto desencriptado es: " + uncrypt(texto);
-      document.getElementById("mensaje_error").innerHTML="";
+      document.getElementById("texto_ingresado").value="";
     } else { 
-      document.getElementById("mensaje_error").innerHTML="No cumple condicion";
+      document.getElementById("texto_salida").innerHTML=" *No cumple condicion";
+      document.getElementById("texto_ingresado").value="";
     }
   }
-
-
 
 
 
