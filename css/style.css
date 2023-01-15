@@ -72,13 +72,13 @@ height: 100%;
 }
 
 .texto_encriptado{
-  background-color: rgb(10, 129, 248);
+  background-color: rgb(141, 236, 249);
   border: 1px dotted rgb(2, 6, 5);
   border-radius: 15px;
-  width: 80%;
+  width: 60%;
   height: 80px;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 20%;
+  margin-left: 20%;
   margin-bottom: 2%;
   margin-top: 20px;
 }
@@ -89,66 +89,6 @@ height: 100%;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.input {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
-  width: 300px;
-  height: 300px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.info {
-  display: flex;
-  color: var(--gray400);
-  gap: 0.5rem;
-  font-size: 12px;
-  visibility: hidden;
 }
 
 button {
@@ -187,118 +127,42 @@ button {
   color: black;
   font-size: 20px;
   font-weight: bold;
-  
 }
 
 .buttonB:hover {
   font-size: 25px;
   background-color: white;
-
 }
-
-.output {
-  display: flex;
-  flex-direction: column;
-  margin: 4rem 1.5rem 2.5rem 1.5rem;
-  padding: 2rem;
-  background: #FFFFFF;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  border-radius: 32px;
-  text-align: center;
-}
-
-.output h2,
-.output p {
-  margin: 0.5rem 0.5rem 0 0.5rem;
-}
-
-.buttonCopy {
-  background-color: transparent;
-  width: 100%;
-  font-size: 1rem;
-}
-
-.buttonCopy:hover {
-  background-color: var(--darkBlue300);
-  color: #FFFFFF;
-}
-
-
-
-.initial-output {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.final-output {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  gap: 2rem;
-  text-align: left;
-  font-size: 1.5rem;
-}
-
-
 
 
 @media (min-width:768px) {
-  
+
   header {
     padding: 0 2.5rem;
     height: 10rem;
-    background-color: transparent;
   }
 
   main{
     padding: 0 2.5rem;
-
+    text-align: center;
   }
+
   .botones {
     display: flex;
     flex-direction: row;
   }
 
   button {
-    width: calc((100%-104px)/2);
+    width: calc((100%-50px)/2);
   }
-
-  textarea {
-    height: 28rem;
-  }
-
 }
 
-@media (min-width:1440px) {
-  .container {
-    display: flex;
-    position: absolute;
-    top: 0px;
-    padding: 0;
-    width: 100%;
-    justify-content: space-evenly;
-  }
 
-  textarea {
-    height: 55vh;
-  }
+@media (min-width:1440px) {
 
   .input {
     display: flex;
     margin-top: 200px;
     width: 900px;
   }
-
-  .output {
-    width: 336px;
-    height: 78vh;
-  }
-}
-
-.mensaje_invalido{
-color: #FFFFFF;
-margin: 10% 10% 10% 10%;
 }
