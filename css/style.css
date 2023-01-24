@@ -47,7 +47,7 @@ height: 100%;
 .texto_ingresado {
   background-color: white;
   padding: 10px;
-  margin: 10% 10% 10% 10%;
+  margin: 10% 10% 10% -10%;
   width: 100%;
   border: 1px dotted rgb(23, 83, 61);
   border-radius: 15px;
